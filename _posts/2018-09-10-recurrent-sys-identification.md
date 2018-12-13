@@ -60,8 +60,47 @@ m\ddot{d}+k_{d}\dot{d}+k_{s}d=F
 \end{align}
 
 where $d$ is the distance from the equilibrium point, $m$ is the mass, $k_{d}$ and $k_{s}$ are the damping and spring constants, and $F$ is the external force. 
+By introducing the state-space variables $x_{1}=d$ and $x_{2}=\dot{d}$, the model \eqref{eq2:ode} can be written in the state-space form
+$$
+\begin{align}
+\underbrace{\begin{bmatrix}
+\dot{x}_{1} \\ \dot{x}_{2}
+\end{bmatrix}}_{\dot{\mathbf{x}}}= \underbrace{\begin{bmatrix}
+0 & 1 \\ -\frac{k_{s}}{m} & -\frac{k_{d}}{m}\end{bmatrix}}_{A} \underbrace{\begin{bmatrix}
+x_{1} \\ x_{2} 
+\end{bmatrix}}_{\mathbf{x}}+\underbrace{\begin{bmatrix} 0 \\ \frac{1}{m} \end{bmatrix}}_{B}\underbrace{F}_{\mathbf{u}} \label{state:Mass_spring}
+\end{align}
+$$
+We assume that only the position vector $d$ (that is, the state variable $x_{1}$) can be observed. Consequently, the output equation takes the following form:
+$$
+\begin{align}
+\mathbf{y}=\underbrace{\begin{bmatrix}1 & 0\end{bmatrix}}_{C}\mathbf{x}
+\label{output:Mass_spring}
+\end{align}
+$$
+The state-space model \eqref{state:Mass_spring}-\eqref{output:Mass_spring} of the spring-mass system is in the continuous-time domain. To transform it into the 
+discrete-time domain we use the [Backward Euler](https://en.wikipedia.org/wiki/Backward_Euler_method) method. Using this approximation, we obtain:
+$$
+\begin{align}
+\frac{\mathbf{x}_{k}-\mathbf{x}_{k-1}}{h}=A\mathbf{x}_{k}+B\mathbf{u}_{k-1}
+\label{discreteTime1}
+\end{align}
+$$
+where $h$ is the discretization time step. The last equation leads to 
 
-
+$$
+\begin{align}
+\mathbf{x}_{k}=\tilde{A}\mathbf{x}_{k-1}+\tilde{B}\mathbf{u}_{k-1}
+\label{discreteTime2}
+\end{align}
+$$
+where $\tilde{A}=(I-hA)^{-1}$ and $\tilde{B}=h\tilde{A}B$, and the output equation remains unchanged:
+$$
+\begin{align}
+\mathbf{y}_{k}=C\mathbf{x}_{k}
+\label{output:Mass_springDiscrete}
+\end{align}
+$$
 
 
 
