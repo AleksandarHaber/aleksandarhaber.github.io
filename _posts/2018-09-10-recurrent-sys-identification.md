@@ -166,15 +166,17 @@ plt.ylabel('Position- d')
 plt.title('System step response')
 {% endhighlight %}
 
-
-
-
-
-
-
+Here are a few comments about the code. On lines 6-10 we define the system matrices and the initial condition (a random initial condition). 
+Lines 13-14: we use 300 time steps, and a discretization step (sampling period) of 0.5 seconds. 
+Here it should be noted that the discretization step is relatively high, adding additional damping to the system discrete-time system. 
+Here we do not care about this phenomenon, and we consider the discrete-time system as a data generating system. 
+On line 18, we define a step function. Uncomment line 17, if you want to use a random signal as an input.  
+Lines 30-49 define a function that simulates the dynamics and that returns the state and output sequences. 
+The step response of the system is shown on the following figure. 
 
 ![Mass-spring system](/assets/images/step_response.png)
 
+This is a typical response of an undamped system.
 
 
 
