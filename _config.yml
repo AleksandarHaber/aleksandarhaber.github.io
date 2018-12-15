@@ -1,6 +1,6 @@
 title: Machine Learning Meets Control Theory
 author: Aleksandar Haber
-email: your-email@domain.com
+email: 
 description: > # this means to ignore newlines until "twitter_username:"
   I have created this website to describe my recent coding and research projects on control theory and engineering, machine learning,
   dynamical systems, etc.
@@ -8,14 +8,14 @@ description: > # this means to ignore newlines until "twitter_username:"
 # social links
 twitter_username: AleksandarHaber
 github_username:  AleksandarHaber
-rss: rss
+#rss: rss
 # dribbble_username: jekyll
 # facebook_username: jekyll
 # flickr_username: jekyll
 # instagram_username: jekyll
-# linkedin_username: jekyll
+# linkedin_username: aleksandar-haber
 # pinterest_username: jekyll
-# youtube_username: jekyll
+# youtube_username: Aleksandar Haber
 # youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
 # youtube_channel_name: CloudCannon
 # telegram_username: jekyll

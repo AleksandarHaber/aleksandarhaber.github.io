@@ -1,9 +1,10 @@
 ---
 layout: post
 title: "Using Recurrent NNs and Keras to Reproduce the Input-Output Behaviour of a State-Space Model of a Dynamical System"
-categories: misc
+categories: machine_learning
 ---
 
+Before we start (for impatient): the codes used in this project are posted [here](https://github.com/AleksandarHaber/Machine-Learning-of-Dynamical-Systems-using-Recurrent-Neural-Networks). 
 
 This post is motivated by an [interesting question](https://github.com/keras-team/keras/issues/8579) posted on the Keras Github page.
 The post in which the question is stated starts as follows: "For a final thesis I am working with Keras on Tensorflow and have to investigate how LSTM Networks can be used to identify dynamical systems."
