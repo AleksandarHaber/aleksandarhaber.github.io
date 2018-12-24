@@ -3,6 +3,7 @@ layout: post
 title: "Using Keras to Identify an ARX model of a Dynamical System"
 author: Aleksandar Haber
 categories: machine_learning
+comments: true
 ---
 In this post, we are going to show how to identify an autoregressive exogenous (ARX) model of a dynamical system. 
 To perform the identification task we use a multilayer perceptron (MLP) network architecture implemented in Keras. 

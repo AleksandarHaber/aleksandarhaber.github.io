@@ -3,6 +3,7 @@ layout: post
 title: "Using Recurrent NNs and Keras to Reproduce the Input-Output Behaviour of a State-Space Model of a Dynamical System"
 author: Aleksandar Haber
 categories: machine_learning
+comments: true
 ---
 
 Before we start (for impatient): the codes used in this project are posted [here](https://github.com/AleksandarHaber/Machine-Learning-of-Dynamical-Systems-using-Recurrent-Neural-Networks). 
