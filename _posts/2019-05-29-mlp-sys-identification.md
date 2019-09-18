@@ -5,7 +5,7 @@ author: Aleksandar Haber
 categories: machine_learning
 comments: true
 ---
-This post is the first post in a series of posts on the estimation of time series. Here we will learn how to test if a time sequence is a white noise This is important for validating the performance of a method for estimating time series. In this post, we consider scalar time series. 
+This post is the first post in a series of posts on the estimation of time series. Here we will learn how to test if a time sequence is a white noise. This is important for validating the performance of a method for estimating time series. In this post, we consider scalar time series. 
 
 A time series, denoted by $$e_{k}$$, where $$k$$ is a discrete-time instant, is a white noise if the sequence $$\{e_{k} \}$$ is a sequence of independent and identically distributed random variables that have finite mean and variance.
 
@@ -15,7 +15,7 @@ How to tackle this fundamental problem? First, we introduce a sample mean:
 
 $$
 \begin{align}
-\bar{e}_{n}=\sum_{i=1}^{n} e_{i}
+\bar{e}_{n}=\sum_{i=1}^{n} e_{i}.
 \label{sampleMean}
 \end{align}
 $$
@@ -73,7 +73,7 @@ In Theorem 1, $$\rho$$ denotes the "exact" autocorrelation function. The conditi
 
 So let us use the results of Theorem 1, to test if a sequence is a white noise. Let us assume that the sequence $$\{ \e_{k}\}$$ is IID(0,\sigma^2) Namely, for a white noise, we know that the exact autocorrelation function is 
 $$
-\rho(0)=1,\;\; \rho(k)=0, \;\; k=1,2,\ldots
+\rho(0)=1,\;\; \rho(k)=0, \;\; k=1,2,\ldots,
 $$
 and consequently, the matrix $W$ is an identity matrix. Furthermore, for large $$n$$, the sample autocorrelation functions $$\hat{\rho}(1),\hat{\rho}(2),\ldots, \hat{\rho}(n)$$ are approximatelly independent and identically distributed normal random variables with the mean of $0$ and the variance of $1/n$.
 So, we need to perform hypothesis testing: $$H_{0}: \rho(l)=0, \;\; l>0$$ against $$H_{1}: \rho(l) \ne 0, \;\; l>0$$.
