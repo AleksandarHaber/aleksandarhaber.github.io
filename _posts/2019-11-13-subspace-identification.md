@@ -6,10 +6,8 @@ categories: machine_learning
 comments: true
 ---
 
-***Do not waste time reinventing the wheel*** 
 
 For a relatively broad class of problems, subspace identification algorithms perform exceptionally well and outperform most of the algorithms including neural networks for estimation of linear systems. 
-The main purpose of this post is to convince you that this is true and to provide you codes and introduction to subspace identification, so you can use it for your engineering and scientific project. 
 
 Also, I (Aleksandar Haber) am not the person who developed this amazing method that unfortunately is not widely known (in the machine learning community). 
 There is a long line of talented researchers who worked on the development of the method.
